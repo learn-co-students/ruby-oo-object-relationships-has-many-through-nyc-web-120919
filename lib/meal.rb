@@ -1,7 +1,7 @@
 class Meal
 
     attr_accessor :waiter, :customer, :total, :tip
-    
+
     @@all = []
 
     def initialize(waiter, customer, total, tip=0)
@@ -17,12 +17,10 @@ class Meal
     @@all
   end
 
- 
-
-  def meals
-    Meal.all.select do |meal|
-      meal.customer == self
-    end
-  end
+#   def meals
+#     Meal.all.select do |meal|
+#       meal.customer == self
+#     end
+#   end
 
 end
